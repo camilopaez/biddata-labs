@@ -7,6 +7,7 @@
 
 * Performing mariojb test
   * python wordcount-local.py ../datasets/gutenberg-small/*.txt > out.txt
+  
 ![map](images/map.png)
 
 ## Ex #2
