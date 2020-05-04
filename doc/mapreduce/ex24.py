@@ -4,8 +4,12 @@ class MRWordFrequencyCount(MRJob):
 
     def mapper(self, _, line):
         idemp,sececon,salary,year = line.split(',')  
-        yield idemp, int(salary)
-       
+        try:
+            salary = int(salary)
+            yield yield idemp, int(salary)
+        except:
+            pass
+
     def reducer(self, key, values):
         salary = 0
         quantity = 0
