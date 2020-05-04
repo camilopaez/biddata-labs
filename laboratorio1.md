@@ -22,3 +22,6 @@
 ![erm1](images/erm1.png)
 ![erm2](images/erm2.png)
 ![erm3](images/erm3.png)
+![erm4](images/erm4.png)
+![erm5](images/erm5.png)
+![erm6](images/erm6.png)
