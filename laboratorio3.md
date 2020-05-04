@@ -4,8 +4,8 @@
 
 ### Hive
 
-DDL querys
-DROP DATABASE mybd;
+#### DDL querys
+```DROP DATABASE mybd;
 CREATE DATABASE mybd;
 USE mybd;
 
@@ -22,9 +22,9 @@ LOCATION '/user/hadoop/datasets/onu/export/';
 CREATE EXTERNAL TABLE docs (line STRING) 
 STORED AS TEXTFILE 
 LOCATION '/user/hadoop/datasets/gutenberg-small/';
-
-DQL querys
-
+```
+#### DQL querys
+```
 USE mydb;
 SHOW tables;
 DESCRIBE hdi;
@@ -37,8 +37,8 @@ GROUP BY word
 ORDER BY word DESC LIMIT 10;
 
 SELECT word, count(1) AS count FROM (SELECT explode(split(line,' ')) AS word FROM docs) w 
-
-!(emr1)[images/hiv1.png]
-!(emr2)[images/hiv2.png]
-!(emr3)[images/hiv3.png]
-!(emr4)[images/hiv4.png]
+```
+![emr1](images/hiv1.png)
+![emr2](images/hiv2.png)
+![emr3](images/hiv3.png)
+![emr4](images/hiv4.png)
